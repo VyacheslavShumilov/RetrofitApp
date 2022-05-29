@@ -89,6 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
+        android:textColor="@color/followers_btn_color"
         android:text="@string/followers_btn"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/urlTextView" />
@@ -99,6 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:text="@string/following_btn"
+        android:textColor="@color/followings_btn_color"
         app:layout_constraintStart_toEndOf="@+id/followersBtn"
         app:layout_constraintTop_toTopOf="@+id/followersBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="user_info_text_color">#E65100</color>
+    <color name="followers_btn_color">#F57F17</color>
+    <color name="followings_btn_color">#FFD600</color>
 </resources>
