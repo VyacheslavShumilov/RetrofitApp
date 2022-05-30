@@ -7,16 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import com.hfad.retrofitapp.adapter.AdapterApiUsers
 import com.hfad.retrofitapp.databinding.FragmentRetrofitBinding
 import com.hfad.retrofitapp.model.Users
 import com.hfad.retrofitapp.services.Api
+import com.hfad.retrofitapp.user.UserInfoActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import kotlin.math.log
 
 
 class RetrofitFragment : Fragment(),AdapterApiUsers.OnClickListener {
