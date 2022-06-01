@@ -1,4 +1,4 @@
-package com.hfad.retrofitapp.adapter
+package com.hfad.retrofitapp.followings.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,11 +8,11 @@ import com.hfad.retrofitapp.model.Following
 import com.squareup.picasso.Picasso
 
 class AdapterFollowing(var followings: ArrayList<Following>):RecyclerView.Adapter<AdapterFollowing.ViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdapterFollowing.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(ItemFollowingsBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
-    override fun onBindViewHolder(holder: AdapterFollowing.ViewHolder, position: Int) = holder.bindView(followings[position])
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) = holder.bindView(followings[position])
 
     override fun getItemCount(): Int = followings.size
 

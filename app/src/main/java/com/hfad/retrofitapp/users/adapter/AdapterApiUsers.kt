@@ -1,4 +1,4 @@
-package com.hfad.retrofitapp.adapter
+package com.hfad.retrofitapp.users.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

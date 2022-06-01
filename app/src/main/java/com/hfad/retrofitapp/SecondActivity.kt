@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.hfad.retrofitapp.databinding.ActivitySecondBinding
+import com.hfad.retrofitapp.users.RetrofitFragment
 
 class SecondActivity : AppCompatActivity() {
 
@@ -25,5 +26,9 @@ class SecondActivity : AppCompatActivity() {
         val ft: FragmentTransaction = fragmentManager.beginTransaction()
         ft.replace(R.id.fragment_container, fragment)
         ft.commit()
+    }
+
+    fun clickBack(){
+        finish()
     }
 }
