@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/GB_Study/10_Kotlin_ment/RetrofitApp/app/src/main/res/layout/activity_followers.xml" value="0.1" />
+        <entry key="..\:/GB_Study/10_Kotlin_ment/RetrofitApp/app/src/main/res/drawable/baseline_arrow_back_20.xml" value="0.2785" />
+        <entry key="..\:/GB_Study/10_Kotlin_ment/RetrofitApp/app/src/main/res/layout/activity_followers.xml" value="0.15" />
         <entry key="..\:/GB_Study/10_Kotlin_ment/RetrofitApp/app/src/main/res/layout/activity_following.xml" value="0.3145833333333333" />
         <entry key="..\:/GB_Study/10_Kotlin_ment/RetrofitApp/app/src/main/res/layout/activity_main.xml" value="0.33177083333333335" />
         <entry key="..\:/GB_Study/10_Kotlin_ment/RetrofitApp/app/src/main/res/layout/activity_second.xml" value="0.33177083333333335" />
@@ -14,6 +15,7 @@
         <entry key="..\:/GB_Study/10_Kotlin_ment/RetrofitApp/app/src/main/res/layout/item_following.xml" value="0.3307291666666667" />
         <entry key="..\:/GB_Study/10_Kotlin_ment/RetrofitApp/app/src/main/res/layout/item_followings.xml" value="0.33177083333333335" />
         <entry key="..\:/GB_Study/10_Kotlin_ment/RetrofitApp/app/src/main/res/layout/item_list_api_users.xml" value="0.33" />
+        <entry key="..\:/GB_Study/10_Kotlin_ment/RetrofitApp/app/src/main/res/layout/toolbar.xml" value="0.25" />
       </map>
     </option>
   </component>
