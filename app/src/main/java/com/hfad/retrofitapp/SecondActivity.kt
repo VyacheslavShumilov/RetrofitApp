@@ -27,4 +27,8 @@ class SecondActivity : AppCompatActivity() {
         ft.replace(R.id.fragment_container, fragment)
         ft.commit()
     }
+
+    fun clickBack(){
+        finish()
+    }
 }

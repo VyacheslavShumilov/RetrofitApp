@@ -27,6 +27,10 @@ class FollowingActivity : AppCompatActivity(), FollowingContract.View {
         presenter.attachView(this)
         presenter.responseData(login)
 
+        binding.toolbar.clickBackBtn.setOnClickListener {
+            finish()
+        }
+
     }
 
     override fun loadFollowing(followings: ArrayList<Following>) {

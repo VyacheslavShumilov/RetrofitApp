@@ -20,6 +20,7 @@ class AdapterFollowers(var followers: ArrayList<Followers>): RecyclerView.Adapte
         fun bindView(followers: Followers) {
             Picasso.get().load(followers.avatar_url).into(binding.followerImageView)
             binding.loginTextView.text = followers.login
+
         }
     }
 

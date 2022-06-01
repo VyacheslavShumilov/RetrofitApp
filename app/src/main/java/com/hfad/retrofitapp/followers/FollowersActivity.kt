@@ -29,7 +29,13 @@ class FollowersActivity : AppCompatActivity(), FollowersContract.View {
         presenter.attachView(this)             //подписка текущей активности
         presenter.responseData(login)
 
+
+        binding.toolbar.clickBackBtn.setOnClickListener {
+            finish()
+        }
+
     }
+
 
     //из FollowersPresenter в готовом виде заполняю recyclerView списком Followers'ов
     override fun loadFollowers(followers: ArrayList<Followers>) {

@@ -46,6 +46,10 @@ class UserInfoActivity : AppCompatActivity(), UserContract.View {
             intent.putExtra("login", login)
             startActivity(intent)
         }
+
+        binding.toolbar.clickBackBtn.setOnClickListener{
+            finish()
+        }
     }
 
     override fun loadUsers(users: Users) {

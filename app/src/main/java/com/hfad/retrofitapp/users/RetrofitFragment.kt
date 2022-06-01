@@ -7,20 +7,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.hfad.retrofitapp.users.adapter.AdapterApiUsers
+import com.hfad.retrofitapp.SecondActivity
 import com.hfad.retrofitapp.databinding.FragmentRetrofitBinding
 import com.hfad.retrofitapp.model.Users
-import com.hfad.retrofitapp.services.Api
 import com.hfad.retrofitapp.user.UserInfoActivity
-import com.hfad.retrofitapp.users.adapter.AdapterApiUsers.OnClickListener
+import com.hfad.retrofitapp.users.adapter.AdapterApiUsers
 import com.hfad.retrofitapp.users.impl.UsersContract
 import com.hfad.retrofitapp.users.impl.UsersPresentersImpl
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 
-class RetrofitFragment : Fragment(), OnClickListener, UsersContract.View {
+class RetrofitFragment : Fragment(), AdapterApiUsers.OnClickListener, UsersContract.View {
 
     private lateinit var binding: FragmentRetrofitBinding
     private lateinit var presenter: UsersPresentersImpl
@@ -29,7 +25,7 @@ class RetrofitFragment : Fragment(), OnClickListener, UsersContract.View {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentRetrofitBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -41,6 +37,9 @@ class RetrofitFragment : Fragment(), OnClickListener, UsersContract.View {
         presenter.attachView(this)
         presenter.responseData()
 
+        binding.toolbar.clickBackBtn.setOnClickListener {
+            (requireActivity() as SecondActivity).clickBack()
+        }
     }
 
     override fun onClickUser(login: String) {
@@ -50,11 +49,9 @@ class RetrofitFragment : Fragment(), OnClickListener, UsersContract.View {
     }
 
     override fun loadUsers(users: ArrayList<Users>) {
-//        val adapterUsers = AdapterApiUsers(users)
-//        binding.recyclerView.adapter = adapterUsers
-
+        val adapterUsers = AdapterApiUsers(users,this)
+        binding.recyclerView.adapter = adapterUsers
     }
-
 
     override fun progressBar(show: Boolean) {
         if (show) binding.progressBar.visibility = View.VISIBLE

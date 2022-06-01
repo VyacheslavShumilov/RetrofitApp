@@ -30,7 +30,6 @@ class UserPresenterImpl: UserContract.Presenter {
                     view.progressBar(false)
                     view.error()
                 }
-
             })
         }
     }
